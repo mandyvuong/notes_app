@@ -19,11 +19,11 @@ function expect (actual){
       } else 
       console.log('fail')
     }, 
-    // toNotEqual: function(expected){
-    //   if (actual != expected) {
-    //     console.log('pass')
-    //   } else 
-    //     console.log('fail')
-    // }
+    toNotEqual: function(expected) {
+      if (actual !== expected) {
+        console.log('pass')
+      } else 
+        console.log('fail')
+    }
   }
 }
