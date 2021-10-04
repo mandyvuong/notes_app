@@ -28,7 +28,24 @@ I can use shortcodes like `:fire:` that get converted into emojis like 🔥
 So I can record notes with fun little pictures
 ```
 
-# MVP
+## MVP
 
 1. create note - create
 2. see the full test of note - all
+
+## http-server set up
+
+`Node` and `npm` installed.
+
+From the project folder in the command line
+
+```
+npm install http-server --save
+node node_modules/http-server/bin/http-server
+```
+
+To run the code
+
+```
+npm install http-server --save-dev
+```
