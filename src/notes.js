@@ -7,10 +7,11 @@ class Note {
     this.list.push(note);
   }
 
-  delete(indexInList){
-    // noteIndex = this.list.findIndex(note);
-    // console.log(noteIndex)
-    // this.list.splice(noteIndex, 1);
-    this.list.splice(indexInList, 1)
+  delete(note){
+    console.log(this.list)
+    let pos = this.list.indexOf(note)
+    let removedItem = this.list.splice(pos, 1)
+    console.log(this.list)
+    return removedItem
   }
 }

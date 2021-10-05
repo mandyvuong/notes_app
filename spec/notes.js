@@ -11,7 +11,7 @@ it('can show a list of notes', ()=>{
   expect(note.list).toContain ('this is a note', 'this is another note')
 });
 
-xit('can delete a note', ()=>{
+it('can delete a note', ()=>{
   note = new Note();
   note.add('this is a note');
   note.add('this is another note');
