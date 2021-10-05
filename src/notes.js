@@ -16,16 +16,9 @@ class Note {
     return removedItem
   }
 
-  abbreviate(note){
-    let abbreviation = note.substring(0, 20);
-    return abbreviation
-  }
-
   abbreviateEveryNote() {
-   this.abbreviatedList = this.list.map(note => {
-      this.abbreviate(note) // returns undefined elements in an array
-    });
+   this.abbreviatedList = this.list.map(note => note.substr(0, 20))
   }
-   
-
 }
+
+console.log(this.abbreviatedList);
