@@ -1,18 +1,17 @@
 class Note {
-  constructor(){
+  constructor() {
     this.list = [];
     this.abbreviatedList = [];
   }
 
-  add(note){
+  add(note) {
     this.list.push(note);
+    return note
   }
 
-  delete(note){ // update method to complete?
-    console.log(this.list)
+  delete(note) { // update method to complete?
     let pos = this.list.indexOf(note)
     let removedItem = this.list.splice(pos, 1)
-    console.log(this.list)
     return removedItem
   }
 
