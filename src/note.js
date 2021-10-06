@@ -5,7 +5,7 @@ class Note {
   }
 
   add(note) {
-    this.list.push(note);
+    this.list.push(note);      
     return note
   }
 
@@ -17,6 +17,10 @@ class Note {
 
   abbreviateEveryNote() {
    this.abbreviatedList = this.list.map(note => note.substr(0, 20))
+  }
+
+  lastNotes() {
+    return this.list[this.list.length -1]
   }
 }
 
