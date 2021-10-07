@@ -1,1 +1,47 @@
-test
+.header {
+  background-color: #ffffe7;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.create {
+  background-color: #ffffe7;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.selected-note {
+  background-color: #ffffe7;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Gaegu", cursive;
+}
+
+#notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+a:link,
+a:visited {
+  border-radius: 25px;
+  background-color: chocolate;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-style: dotted;
+}
+
+a:hover,
+a:active {
+  background-color: #ffffe7;
+}
