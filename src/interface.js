@@ -2,15 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let note = new Note(); 
 
-// Retrieve (localStorage Object)
-let retrieveNotes = () => {
-  for (let i = 0; i < localStorage.length; i++) {
-    note.list.push(localStorage.getItem(i));
-  }
-}
-
-retrieveNotes();
-
 document.querySelector('#add-note-button').addEventListener('click', (clickevent) => {
   clickevent.preventDefault();
   let newNote = document.querySelector('#add-note').value
@@ -36,6 +27,7 @@ document.querySelector('#add-note-button').addEventListener('click', (clickevent
   .then((data) => {
     note.add(data.emojified_text)
     note.abbreviateEveryNote()
+    localStorage.setItem(note.list.length-1, note.list[note.list.length-1]); // Store
 
     // each note is in an anchor
     let item = document.createElement('a')
@@ -44,7 +36,6 @@ document.querySelector('#add-note-button').addEventListener('click', (clickevent
       item.innerText = note.abbreviatedList[note.abbreviatedList.length-1] + '\n'; 
     document.querySelector('#all-notes').appendChild(item) 
   })     
-
   
   makeUrlChangeShowNoteForCurrentPage();
 
@@ -65,5 +56,5 @@ document.querySelector('#add-note-button').addEventListener('click', (clickevent
       .getElementById("foo")
       .innerHTML = note.list[Note];
   };
-  })   
+  })
 });
