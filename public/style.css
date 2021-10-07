@@ -1,47 +1,86 @@
 .header {
-  background-color: #ffffe7;
+  background-color: #c0c0c0;
+  font-family: "Lato";
   padding: 30px;
   text-align: center;
   font-size: 35px;
 }
 
 .create {
-  background-color: #ffffe7;
+  background-color: #c0c0c0;
   padding: 30px;
   text-align: center;
   font-size: 35px;
 }
 
 .selected-note {
-  background-color: #ffffe7;
+  background-color: #c0c0c0;
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  font-family: "Gaegu", cursive;
+  font-family: "Reenie Beanie", cursive;
 }
 
-#notes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin-bottom: 100px;
-  flex-wrap: wrap;
-}
-
-a:link,
-a:visited {
-  border-radius: 25px;
-  background-color: chocolate;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
+a:nth-child(odd) {
+  word-wrap: break-word;
+  font-family: "Reenie Beanie", cursive;
   text-decoration: none;
+  color: #000;
+  background: #ffc;
   display: inline-block;
-  border-style: dotted;
+  height: 2em;
+  width: 5em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  transform: rotate(-6deg);
+  transition: transform 0.15s linear;
+  font-size: 2rem;
 }
 
-a:hover,
-a:active {
-  background-color: #ffffe7;
+a:nth-child(even) {
+  word-wrap: break-word;
+  font-family: "Reenie Beanie", cursive;
+  text-decoration: none;
+  color: #000;
+  background: #cfc;
+  display: inline-block;
+  height: 2em;
+  width: 5em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  transform: rotate(6deg);
+  transition: transform 0.15s linear;
+  position: relative;
+  top: 5px;
+  font-size: 2rem;
+}
+
+a:nth-child(3n) {
+  word-wrap: break-word;
+  font-family: "Reenie Beanie", cursive;
+  text-decoration: none;
+  color: #000;
+  background: #ccf;
+  display: inline-block;
+  height: 2em;
+  width: 5em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  transform: rotate(-3deg);
+  transition: transform 0.15s linear;
+  position: relative;
+  top: -5px;
+  font-size: 2rem;
+}
+
+input {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #60a3bc;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
 }
