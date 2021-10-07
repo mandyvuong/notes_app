@@ -15,6 +15,7 @@ document.querySelector('#add-note-button').addEventListener('click', (clickevent
   clickevent.preventDefault();
   let newNote = document.querySelector('#add-note').value
   let lastnote = note.lastNotes();    
+  document.querySelector('#add-note').value = "";
 
   // This is the API Function
   var myHeaders = new Headers();
@@ -42,7 +43,7 @@ document.querySelector('#add-note-button').addEventListener('click', (clickevent
       item.id = `${note.list.length-1}`; 
       item.href = `#${note.list.length-1}`; 
       item.innerText = note.abbreviatedList[note.abbreviatedList.length-1] + '\n'; 
-    document.querySelector('#all-notes').appendChild(item) 
+    document.querySelector('#all-notes').appendChild(item)
   })     
 
   
