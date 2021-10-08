@@ -22,6 +22,7 @@ class Note {
   lastNotes() {
     return this.list[this.list.length -1]
   }
+
 }
 
 console.log(this.abbreviatedList);
