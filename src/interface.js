@@ -2,19 +2,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let note = new Note(); 
 
-// Retrieve (localStorage Object)
-let retrieveNotes = () => {
-  for (let i = 0; i < localStorage.length; i++) {
-    note.list.push(localStorage.getItem(i));
-  }
-}
+// // Retrieve (localStorage Object)
+// let retrieveNotes = () => {
+//   for (let i = 0; i < localStorage.length; i++) {
+//     note.list.push(localStorage.getItem(i));
+//   }
+// }
 
-retrieveNotes();
+// retrieveNotes();
 
 document.querySelector('#add-note-button').addEventListener('click', (clickevent) => {
   clickevent.preventDefault();
-  let newNote = document.querySelector('#add-note').value
-  let lastnote = note.lastNotes();    
+  let newNote = document.querySelector('#add-note').value 
   document.querySelector('#add-note').value = "";
 
   // This is the API Function
@@ -46,7 +45,6 @@ document.querySelector('#add-note-button').addEventListener('click', (clickevent
     document.querySelector('#all-notes').appendChild(item)
   })     
 
-  
   makeUrlChangeShowNoteForCurrentPage();
 
   function makeUrlChangeShowNoteForCurrentPage() {
