@@ -6,12 +6,14 @@
   <script src="spec/frameWorkTests.js"></script>
   <script src="spec/noteTests.js"></script>
   <script src="src/interface.js"></script>
-
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+    </style>
   <title>NOTES</title>
 </head>
 <body>
-  <h1>NOTES APP</h1>
-  <form> 
+  <h1 class="header" > NOTES APP</h1>
+  <form class='create'> 
     <textarea id="add-note" name="note" placeholder="Enter note details here" cols="30" rows="10"></textarea><br><br>
     <input id="add-note-button" type="submit" value="Add note">
   </form>
@@ -21,7 +23,7 @@
 
     
   </ul>
-  <div id="foo"></div>
+  <div class= 'selected-note' id="foo"></div>
   <br>
   <br>
 </body>
