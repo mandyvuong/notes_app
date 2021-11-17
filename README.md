@@ -2,6 +2,8 @@
 
 Week 7 Makers Academy
 
+Live on https://mandyvuong.github.io/notes_app/
+
 ## User stories
 
 ```
